@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-#def calculate_loan(loan_amount, interest_rate, years):
+def calculate_loan(loan_amount, interest_rate, years):
     monthly_rate = (interest_rate / 100) / 12
     num_payments = years * 12
     if monthly_rate == 0:
