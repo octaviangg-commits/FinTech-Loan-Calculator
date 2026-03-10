@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
-#run
+# trigger github action
 def calculate_loan(loan_amount, interest_rate, years):
     monthly_rate = (interest_rate / 100) / 12
     num_payments = years * 12
